@@ -1,0 +1,29 @@
+.cartButton {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 8px;
+  height: 45px;
+  width: 90px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+
+  @media screen and (max-width: 600px) {
+    height: 26px;
+    width: 50px;
+    font-size: 12px;
+  }
+}
+
+.cartIcon {
+  position: relative;
+  height: 18px;
+  width: 19px;
+
+  @media screen and (max-width: 600px) {
+    height: 12px;
+    width: 13px;
+  }
+}

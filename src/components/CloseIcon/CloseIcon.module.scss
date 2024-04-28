@@ -1,0 +1,36 @@
+.closeIcon {
+  height: 38px;
+  width: 38px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background: #000000;
+  padding: 5px;
+  cursor: pointer;
+
+  @media screen and (max-width: 600px) {
+    color: #0f52ba;
+    font-size: 30px;
+  }
+}
+
+.smallIcon {
+  height: 18px;
+  width: 18px;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 400;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background: #000000;
+  padding: 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,92 @@
+@mixin scrollbar() {
+  &::-webkit-scrollbar {
+    width: 14px;
+    height: 18px;
+  }
+  &::-webkit-scrollbar-thumb {
+    height: 6px;
+    border: 4px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.15);
+    box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05),
+      inset 1px 1px 0px rgba(0, 0, 0, 0.05);
+  }
+  &::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+  &::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+}
+
+.cartContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 486px;
+  background: #0f52ba;
+  box-shadow: -5px 0px 6px 0px #00000021;
+  z-index: 50;
+
+  @media screen and (max-width: 600px) {
+    width: 330px;
+  }
+}
+
+.topCart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding: 0 20px;
+
+  p {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 33px;
+    width: 166px;
+  }
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 20px;
+  height: 70vh;
+  padding: 25px;
+  overflow-y: scroll;
+  @include scrollbar();
+  overscroll-behavior: contain;
+}
+
+.totalPrice {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+
+  p {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+  }
+}
+
+.bottomCart {
+  background: #000000;
+  height: 10vh;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

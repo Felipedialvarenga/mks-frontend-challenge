@@ -1,0 +1,19 @@
+.logo {
+  p {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 300;
+    @media screen and (max-width: 600px) {
+      font-size: 16px;
+    }
+
+    span {
+      font-size: 40px;
+      font-weight: 600;
+      margin-right: 10px;
+      @media screen and (max-width: 600px) {
+        font-size: 32px;
+      }
+    }
+  }
+}
